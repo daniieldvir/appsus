@@ -1,0 +1,27 @@
+.about-headline {
+  text-align: center;
+  margin: 30px;
+}
+
+/* US PIC */
+.about-us {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.daniiel-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.angelina-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.about-section {
+  width: 300px;
+}

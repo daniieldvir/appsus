@@ -1,0 +1,108 @@
+.active-filter {
+  background-color: rgba(128, 128, 128, 0.247);
+}
+.read {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.308);
+  background-color: rgba(128, 128, 128, 0.247);
+}
+.active {
+  background-color: #c5d2a263;
+}
+.starred {
+  color: #ca9e5b;
+}
+.star-btn {
+  margin-left: 8px;
+}
+.side-filters button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border: none;
+  text-align: left;
+  font-size: 18px;
+}
+button i {
+  opacity: 0.5;
+}
+.prev-btns {
+  justify-self: end;
+}
+.prev-btns button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+.title-for-display h2 {
+  padding: 10px;
+}
+.filters-menu {
+  display: block;
+  justify-content: center;
+  margin: auto;
+  width: 40px;
+  font-size: 20px;
+  border: none;
+}
+.filters-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+/* BP */
+@media (max-width: 860px) {
+  .side-filters {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    flex-direction: column;
+    background-color: rgba(245, 245, 245, 0.884);
+    width: 200px;
+    transform: translateX(-100%);
+    border-inline-start: 1px solid rgba(245, 245, 245, 0.705);
+    transition: transform 1s, box-shadow 1s;
+  }
+
+  body.filters-open .side-filters {
+    transform: translateX(0);
+    box-shadow: -2px -2px 20px rgba(255, 255, 255, 0.609);
+  }
+
+  body.filters-open .filters-screen {
+    pointer-events: auto;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+  }
+}
+/* fullscreen */
+@media (min-width: 860px) {
+  .side-filters button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    border-top-right-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    font-size: 18px;
+  }
+  .filters-menu {
+    display: none;
+  }
+  .title-for-display h2 {
+    padding: 15px;
+  }
+  .side-filters button:hover {
+    background-color: #c5d2a23b;
+  }
+}

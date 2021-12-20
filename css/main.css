@@ -1,0 +1,123 @@
+@import url(./parts/fonts.css);
+@import url(./parts/helpers.css);
+@import url(./home-page.css);
+@import url(./about-page.css);
+@import url(./mobile-nav.css);
+
+/* MAIL CSS */
+@import url(./apps/mail-app/mail-app-main.css);
+
+/* BOOK CSS */
+@import url(./apps/book-app/style.css);
+
+/* KEEP CSS */
+@import url(./apps/keep-app/keep-main-app.css);
+@import url(./apps/keep-app/keep-note-display.css);
+@import url(./apps/keep-app/note-edit.css);
+@import url(./apps/keep-app/kepp-note-add.css);
+@import url(./apps/keep-app/note-filter.css);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: montserrat, sans-serif;
+  color: #444247;
+  margin: 0;
+  height: 100%;
+  background-image: url("/img/back1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+}
+
+/* LAYOUT */
+.main-layout {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* HEADER */
+.header a {
+  text-decoration: none;
+  color: black;
+}
+
+/* APP */
+
+.main-containers {
+  background-color: rgba(245, 245, 245, 0.6);
+  height: 90vh;
+  border: 1px solid rgba(159, 158, 158, 15%);
+  border-radius: 30px;
+  /* overflow: scroll; */
+  /* padding: 20px; */
+}
+
+/* USER MSG */
+.user-msg {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.success {
+  background-color: #68936e;
+}
+
+.error {
+  background-color: #cc452a;
+}
+
+/* animations */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.curtain-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+body.modal-open .curtain-screen {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* MOBILE */
+@media (min-width: 860px) {
+  .main-layout {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .btn-menu {
+    display: none;
+  }
+  .main-containers {
+    overflow: scroll;
+  }
+}

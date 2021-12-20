@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+/* ADD PAGE */
+.note-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.add-input {
+  width: 500px;
+  height: 50px;
+}

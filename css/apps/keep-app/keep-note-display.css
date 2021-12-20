@@ -1,0 +1,68 @@
+/* NOTE */
+.my-notes-handling {
+  border-bottom: 1px solid rgb(146, 146, 146);
+}
+
+.notes-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.note-header {
+  margin: 10px;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-top: 1px solid rgb(146, 146, 146);
+}
+
+.note-display {
+  font-size: 17px;
+  /* min-height: 250px; */
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid rgb(146, 146, 146);
+  border-radius: 5px;
+}
+
+.note-img {
+  width: 100%;
+}
+
+.note-options {
+  margin: 10px;
+}
+
+.note-options > * {
+  border: none;
+  cursor: pointer;
+  background-color: hsla(0, 0%, 96%, 0);
+}
+
+.edit-btn {
+  color: black;
+}
+
+.edit-btn:hover {
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+/* TO DO */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+@media (max-width: 860px) {
+  .note-display {
+    font-size: 15px;
+    width: 150px;
+  }
+  .fa-lg {
+    font-size: 100%;
+  }
+}

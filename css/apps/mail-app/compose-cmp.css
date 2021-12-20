@@ -1,0 +1,73 @@
+.email-compose {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.email-compose form {
+  padding: 5px;
+  height: inherit;
+  flex-grow: 1;
+}
+.top-bar {
+  background-color: #ea7553;
+}
+.title-btn {
+  background-color: transparent;
+  height: 30px;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  flex-grow: 1;
+}
+.close-compose-btn {
+  background-color: transparent;
+  color: rgb(208, 208, 208);
+  border: none;
+}
+.recipient-lbl {
+  font-size: 14px;
+}
+.recipient-form {
+  width: 100%;
+}
+.subject-form {
+  padding: 5px;
+}
+.compose-body {
+  overflow-y: auto;
+  flex-grow: 1;
+}
+.send-button {
+  margin: 5px;
+  width: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c6d3a3;
+  color: #fff;
+}
+.send-button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* fullscreen */
+@media (min-width: 1020px) {
+  .email-compose {
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .close-btn:hover {
+    background-color: rgb(132, 132, 132);
+  }
+}

@@ -1,0 +1,49 @@
+.filter-notes {
+  margin: 0 auto 30px auto;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  max-width: 400px;
+}
+
+.filter-notes input,
+.filter-notes select {
+  max-width: 250px;
+  height: 30px;
+  border: none;
+  padding: 0 10px;
+  outline: none;
+  background-color: white;
+}
+
+.filter-notes select {
+  max-width: 120px;
+  border-left: 1px solid rgb(165, 165, 165);
+}
+
+.filter-notes button {
+  cursor: auto;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: rgb(165, 165, 165);
+}
+
+.filter-notes button.active {
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .filter-notes {
+    max-width: 310px;
+  }
+  .filter-notes input {
+    max-width: 150px;
+  }
+  .filter-notes select {
+    max-width: 110px;
+  }
+}
