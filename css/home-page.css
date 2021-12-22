@@ -19,3 +19,9 @@
 .logo-img {
   width: 300px;
 }
+
+@media (max-width: 860px) {
+  .home-headline {
+    margin-top: 60px;
+  }
+}
