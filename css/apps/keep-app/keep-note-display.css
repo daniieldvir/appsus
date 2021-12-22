@@ -58,11 +58,13 @@
 }
 
 @media (max-width: 860px) {
+  .main-containers {
+    overflow: scroll;
+  }
+  .notes-section {
+    padding: 0;
+  }
   .note-display {
     font-size: 15px;
-    width: 150px;
-  }
-  .fa-lg {
-    font-size: 100%;
   }
 }

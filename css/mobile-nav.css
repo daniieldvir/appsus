@@ -17,8 +17,9 @@
     background-color: #c9d5a5;
     width: 200px;
     transform: translateX(100%);
-    border-inline-start: 1px solid rgba(245, 245, 245, 0.705);
+    border-inline-start: 1px solid rgba(245, 245, 245, 0.7);
     transition: transform 1s, box-shadow 6s;
+    z-index: 9999;
   }
 
   body.menu-open .nav {

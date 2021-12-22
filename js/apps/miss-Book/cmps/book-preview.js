@@ -1,5 +1,5 @@
 export default {
-  props: ["book"],
+  props: ['book'],
   template: `
     <div class="book-preview">
         <h3> Title: {{book.title}} </h3>
@@ -10,17 +10,17 @@ export default {
 
   computed: {
     price() {
-      if (this.book.listPrice.amount > 150) return "red";
-      if (this.book.listPrice.amount < 20) return "green";
+      if (this.book.listPrice.amount > 150) return 'red';
+      if (this.book.listPrice.amount < 20) return 'green';
     },
     sale() {
-      if (this.book.listPrice.isOnSale === true) return "../img/sale.png";
+      if (this.book.listPrice.isOnSale === true) return '../img/sale.png';
     },
     currencyIcon() {
-      const currency = new Intl.NumberFormat("en", {
-        style: "currency",
+      const currency = new Intl.NumberFormat('en', {
+        style: 'currency',
         currency: this.book.listPrice.currencyCode,
-        currencySign: "accounting",
+        currencySign: 'accounting',
       }).format(this.book.listPrice.amount);
       return currency;
     },

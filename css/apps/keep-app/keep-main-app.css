@@ -18,3 +18,18 @@ h1 {
   width: 500px;
   height: 50px;
 }
+
+@media (max-width: 860px) {
+  .book-filter {
+    flex-direction: column;
+    align-items: center;
+  }
+  .search-input {
+    margin-top: 5px;
+    padding: 0;
+  }
+
+  .book-preview-container {
+    height: 100%;
+  }
+}
