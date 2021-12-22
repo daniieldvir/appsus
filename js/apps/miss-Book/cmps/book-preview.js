@@ -14,7 +14,7 @@ export default {
       if (this.book.listPrice.amount < 20) return 'green';
     },
     sale() {
-      if (this.book.listPrice.isOnSale === true) return '../img/sale.png';
+      if (this.book.listPrice.isOnSale === true) return '/img/sale.png';
     },
     currencyIcon() {
       const currency = new Intl.NumberFormat('en', {
